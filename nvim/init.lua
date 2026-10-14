@@ -6,6 +6,8 @@ if not vim.g.vscode then
 	require("pack")
 end
 
+require("pack_extra")
+
 -- For VSCode
 if vim.g.vscode then
 	local vscode = require("vscode")

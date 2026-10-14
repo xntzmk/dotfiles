@@ -17,9 +17,9 @@ require("oil").setup({
 		-- 添加这一行，保留其他默认键位
 		["q"] = "actions.close",
 		["<C-h>"] = false,
-    ["<C-l>"] = false,
-    ["<C-j>"] = false,
-    ["<C-k>"] = false,
+		["<C-l>"] = false,
+		["<C-j>"] = false,
+		["<C-k>"] = false,
 	},
 })
 
