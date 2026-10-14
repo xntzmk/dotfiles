@@ -1,3 +1,5 @@
+vim.g.mapleader = " "
+
 local opt = vim.opt
 
 opt.number = true
@@ -13,3 +15,6 @@ opt.winborder = "rounded"
 
 -- hjkl 移动周围保留 3 行
 opt.scrolloff = 3
+
+opt.ignorecase = true
+opt.smartcase = true

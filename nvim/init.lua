@@ -17,4 +17,7 @@ if vim.g.vscode then
 			end, { buffer = true })
 		end,
 	})
+	vim.keymap.set("n", "gd", function()
+		vscode.action("editor.action.revealDefinition")
+	end)
 end
