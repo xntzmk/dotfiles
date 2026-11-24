@@ -1,25 +1,21 @@
 return {
   {
-    "projekt0n/github-nvim-theme",
-    name = "github-theme",
+    "neanias/everforest-nvim",
+    version = false,
     lazy = false,
     priority = 1000,
-    opts = {
-      options = {
-        transparent = false,
-        terminal_colors = true,
-      },
-    },
-    config = function(_, opts)
-      require("github-theme").setup(opts)
+    config = function()
+      require("everforest").setup({
+        background = "soft", -- "soft" | "medium" | "hard"，背景硬度
+      })
     end,
   },
-  { "sainnhe/everforest", lazy = true },
   {
+    -- 交给 LazyVim 应用配色，避免启动时先加载再丢弃 tokyonight
     "LazyVim/LazyVim",
     opts = {
       colorscheme = function()
-        vim.o.background = "light"
+        vim.o.background = "light" -- "dark" 为深色
         vim.cmd.colorscheme("everforest")
       end,
     },
