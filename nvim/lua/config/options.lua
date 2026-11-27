@@ -4,3 +4,9 @@
 
 -- J/K 半屏滚动时，上下至少保留 3 行
 vim.opt.scrolloff = 3
+
+-- 插件管理
+vim.g.snacks_scroll = false
+
+-- 隐藏行尾空格的显示标记
+vim.opt.listchars:remove("trail")

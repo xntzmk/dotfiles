@@ -7,12 +7,14 @@ local map = vim.keymap.set
 map({ "n", "v", "o" }, "H", "^", { desc = "First non-blank" })
 map({ "n", "v", "o" }, "L", "g_", { desc = "Last non-blank" })
 
--- hover 改到 <Space>h；K 用于半屏上移
-map("n", "<leader>h", function()
+-- <leader>k 和 <leader>h 查看 LSP 悬浮信息；K 用于半屏上移
+local function hover()
   if #vim.lsp.get_clients({ bufnr = 0, method = "textDocument/hover" }) > 0 then
     vim.lsp.buf.hover()
   end
-end, { desc = "Hover" })
+end
+
+map("n", "<leader>k", hover, { desc = "LSP Hover" })
 
 -- 大写 J/K：半屏下/上滚动，不做 zz 居中，依赖 scrolloff = 3 留边
 map({ "n", "v" }, "J", "<C-d>", { desc = "Half page down" })
