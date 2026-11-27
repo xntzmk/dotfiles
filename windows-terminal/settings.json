@@ -1,0 +1,258 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [],
+    "copyFormatting": "none",
+    "copyOnSelect": true,
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "keybindings":
+    [
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+tab"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+tab"
+        },
+        {
+            "id": "Terminal.OpenNewTab",
+            "keys": "ctrl+t"
+        },
+        {
+            "id": "Terminal.FindText",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+comma"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+t"
+        },
+        {
+            "id": "Terminal.PrevTab",
+            "keys": "ctrl+shift+comma"
+        },
+        {
+            "id": "Terminal.NextTab",
+            "keys": "ctrl+shift+period"
+        }
+    ],
+    "newTabMenu":
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "newTabPosition": "afterCurrentTab",
+    "profiles":
+    {
+        "defaults":
+        {
+            "adjustIndistinguishableColors": "always",
+            "colorScheme": "GitHub Light Default",
+            "font":
+            {
+                "builtinGlyphs": true,
+                "face": "Maple Mono NL NF CN"
+            },
+            "padding": "8, 8, 8, 8",
+            "startingDirectory": "%userprofile%",
+            "useAcrylic": false
+        },
+        "list":
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "\u547d\u4ee4\u63d0\u793a\u7b26"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "experimental.retroTerminalEffect": false,
+                "font":
+                {
+                    "face": "MonoLisa Variable, Maple Mono NL NF CN",
+                    "size": 12
+                },
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "opacity": 100,
+                "source": "Windows.Terminal.PowershellCore",
+                "useAcrylic": false
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
+                "name": "Git Bash",
+                "source": "Git"
+            }
+        ]
+    },
+    "schemes":
+    [
+        {
+            "name": "GitHub Light Default",
+            "background": "#FFFFFF",
+            "foreground": "#1F2328",
+            "cursorColor": "#1F2328",
+            "selectionBackground": "#ADD6FF",
+            "black": "#24292F",
+            "red": "#CF222E",
+            "green": "#116329",
+            "yellow": "#4D2D00",
+            "blue": "#0969DA",
+            "purple": "#8250DF",
+            "cyan": "#1B7C83",
+            "white": "#6E7781",
+            "brightBlack": "#57606A",
+            "brightRed": "#A40E26",
+            "brightGreen": "#1A7F37",
+            "brightYellow": "#633C01",
+            "brightBlue": "#218BFF",
+            "brightPurple": "#A475F9",
+            "brightCyan": "#3192AA",
+            "brightWhite": "#8C959F"
+        },
+        {
+            "background": "#EFF1F5",
+            "black": "#5C5F77",
+            "blue": "#1E66F5",
+            "brightBlack": "#ACB0BE",
+            "brightBlue": "#1E66F5",
+            "brightCyan": "#179299",
+            "brightGreen": "#40A02B",
+            "brightPurple": "#EA76CB",
+            "brightRed": "#D20F39",
+            "brightWhite": "#BCC0CC",
+            "brightYellow": "#DF8E1D",
+            "cursorColor": "#DC8A78",
+            "cyan": "#179299",
+            "foreground": "#4C4F69",
+            "green": "#40A02B",
+            "name": "Catppuccin Latte",
+            "purple": "#EA76CB",
+            "red": "#D20F39",
+            "selectionBackground": "#ACB0BE",
+            "white": "#ACB0BE",
+            "yellow": "#DF8E1D"
+        },
+        {
+            "background": "#000000",
+            "black": "#0C0C0C",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#3B78FF",
+            "brightCyan": "#61D6D6",
+            "brightGreen": "#16C60C",
+            "brightPurple": "#B4009E",
+            "brightRed": "#E74856",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#F9F1A5",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#13A10E",
+            "name": "Color Scheme 15",
+            "purple": "#881798",
+            "red": "#C50F1F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#C19C00"
+        },
+        {
+            "background": "#F6F8FA",
+            "black": "#24292F",
+            "blue": "#0969DA",
+            "brightBlack": "#57606A",
+            "brightBlue": "#218BFF",
+            "brightCyan": "#3192AA",
+            "brightGreen": "#1A7F37",
+            "brightPurple": "#A475F9",
+            "brightRed": "#A40E26",
+            "brightWhite": "#6E7781",
+            "brightYellow": "#633C01",
+            "cursorColor": "#24292F",
+            "cyan": "#1B7C83",
+            "foreground": "#24292F",
+            "green": "#116329",
+            "name": "GitHub Light - Astigmatism Friendly",
+            "purple": "#8250DF",
+            "red": "#CF222E",
+            "selectionBackground": "#ADD6FF",
+            "white": "#57606A",
+            "yellow": "#4D2D00"
+        }
+    ],
+    "theme": "GitHub Light Default",
+    "themes":
+    [
+        {
+            "name": "GitHub Light Default",
+            "tab": {
+                "background": "#FFFFFFFF",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "tabRow": {
+                "background": "#F6F8FAFF",
+                "unfocusedBackground": "#EAEEF2FF"
+            },
+            "window": {
+                "applicationTheme": "light",
+                "useMica": false
+            }
+        },
+        {
+            "name": "Catppuccin Latte",
+            "tab":
+            {
+                "background": "#EFF1F5FF",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "tabRow":
+            {
+                "background": "#E6E9EFFF",
+                "unfocusedBackground": "#DCE0E8FF"
+            },
+            "window":
+            {
+                "applicationTheme": "light",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
+                "useMica": false
+            }
+        }
+    ]
+}

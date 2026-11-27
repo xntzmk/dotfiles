@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "palette": {
+    "os": "#656D76",
+    "session": "#0969DA",
+    "path": "#6639BA",
+    "git": "#1A7F37",
+    "closer": "#57606A"
+  },
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "p:os",
+          "style": "plain",
+          "template": "{{.Icon}} ",
+          "type": "os"
+        },
+        {
+          "foreground": "p:session",
+          "style": "plain",
+          "template": "{{ .UserName }}@{{ .HostName }} ",
+          "type": "session"
+        },
+        {
+          "foreground": "p:path",
+          "options": {
+            "style": "full",
+            "mapped_locations_enabled": false
+          },
+          "style": "plain",
+          "template": "{{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "foreground": "p:git",
+          "options": {
+            "branch_icon": " ",
+            "cherry_pick_icon": " ",
+            "commit_icon": " ",
+            "merge_icon": " ",
+            "no_commits_icon": " ",
+            "rebase_icon": " ",
+            "revert_icon": " ",
+            "tag_icon": " "
+          },
+          "template": "{{ .HEAD }} ",
+          "style": "plain",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "style": "plain",
+          "foreground": "p:closer",
+          "template": "",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "final_space": true,
+  "version": 4
+}
